@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard &mdash; Muthengi BCE</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/assets/css/admin.css">
+</head>
+<body>
+
+<div class="dashboard-shell">
+  <aside class="sidebar">
+    <a href="/" target="_blank" class="sidebar-brand">
+      <img src="/assets/img/logo.png" alt="" class="sidebar-brand-mark">
+      <span>Muthengi <em>Admin</em></span>
+    </a>
+
+    <nav class="sidebar-nav" id="admin-tabs">
+      <button data-tab="content" class="active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Home Page</span>
+      </button>
+      <button data-tab="about">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        <span>About Page</span>
+      </button>
+      <button data-tab="reviews">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <span>Reviews</span>
+      </button>
+      <button data-tab="leads">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/></svg>
+        <span>Leads</span>
+      </button>
+      <button data-tab="settings">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c0 .69.4 1.32 1 1.51h.09a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <span>Settings</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-row">
+        <a href="/" target="_blank" class="view-site-link">View Site &#8599;</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+      <button id="logout-btn" class="btn-ghost-small">Log Out</button>
+    </div>
+  </aside>
+
+  <div class="dashboard-content">
+    <header class="content-topbar">
+      <h1 id="topbar-title">Home Page</h1>
+    </header>
+
+    <main class="admin-main">
+
+      <!-- CONTENT TAB -->
+      <section class="tab-panel" id="tab-content" data-tab="content">
+        <p class="tab-intro">Edit what visitors see on the public site. Changes go live immediately after saving.</p>
+        <form id="content-form">
+
+          <fieldset>
+            <legend>Brand</legend>
+            <div class="field-row">
+              <div class="field"><label>Full business name</label><input name="brand.name"></div>
+              <div class="field"><label>Short name (header/logo label)</label><input name="brand.shortName"></div>
+            </div>
+            <div class="upload-mount" data-name="brand.logo" data-label="Logo"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Hero Section</legend>
+            <div class="field"><label>Eyebrow line</label><input name="hero.eyebrow"></div>
+            <div class="field-row">
+              <div class="field"><label>Headline &mdash; line 1</label><input name="hero.headingLine1"></div>
+              <div class="field"><label>Headline &mdash; line 2 (accent color)</label><input name="hero.headingLine2"></div>
+            </div>
+            <div class="field"><label>Subtext</label><textarea name="hero.subtext" rows="2"></textarea></div>
+            <div class="field-row">
+              <div class="field"><label>Primary button text</label><input name="hero.ctaPrimaryText"></div>
+              <div class="field"><label>Secondary button text</label><input name="hero.ctaSecondaryText"></div>
+            </div>
+            <div class="upload-mount" data-name="hero.heroImage" data-label="Hero Image"></div>
+            <div class="field">
+              <label>Background Slideshow Photos <span class="hint">(real job-site photos, up to 4, cross-fade behind the hero)</span></label>
+              <div id="heroBg-list" class="repeatable-list"></div>
+              <button type="button" class="btn-add" data-add="heroBg">+ Add Background Photo</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Stats Plate <span class="hint">(exactly 3&ndash;4 reads best)</span></legend>
+            <div id="stats-list" class="repeatable-list"></div>
+            <button type="button" class="btn-add" data-add="stats">+ Add Stat</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Services Section</legend>
+            <div class="field"><label>Eyebrow</label><input name="servicesIntro.eyebrow"></div>
+            <div class="field"><label>Heading</label><input name="servicesIntro.heading"></div>
+            <div class="field"><label>Subtext</label><textarea name="servicesIntro.subtext" rows="2"></textarea></div>
+            <div id="services-list" class="repeatable-list"></div>
+            <button type="button" class="btn-add" data-add="services">+ Add Service</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Portfolio / Gallery</legend>
+            <div class="field"><label>Eyebrow</label><input name="portfolioIntro.eyebrow"></div>
+            <div class="field"><label>Heading</label><input name="portfolioIntro.heading"></div>
+            <div id="gallery-list" class="repeatable-list"></div>
+            <button type="button" class="btn-add" data-add="gallery">+ Add Project Photo</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Testimonial Band</legend>
+            <div class="field"><label>Quote</label><textarea name="testimonial.quote" rows="2"></textarea></div>
+            <div class="field-row">
+              <div class="field"><label>Author</label><input name="testimonial.author"></div>
+              <div class="field"><label>Role / project</label><input name="testimonial.role"></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Contact Details</legend>
+            <div class="field"><label>Intro line above form</label><input name="contact.formIntro"></div>
+            <div class="field-row">
+              <div class="field"><label>Phone</label><input name="contact.phone"></div>
+              <div class="field"><label>Email</label><input name="contact.email"></div>
+            </div>
+            <div class="field"><label>Address / site office</label><input name="contact.address"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Footer</legend>
+            <div class="field"><label>Footer blurb</label><input name="footer.blurb"></div>
+          </fieldset>
+
+          <button type="submit" class="btn-primary btn-wide">Save Site Content</button>
+          <p class="form-status" id="content-status"></p>
+        </form>
+      </section>
+
+      <!-- ABOUT PAGE TAB -->
+      <section class="tab-panel" id="tab-about" data-tab="about" hidden>
+        <p class="tab-intro">Controls the content on the public <code>/about.html</code> page.</p>
+        <form id="about-form">
+
+          <fieldset>
+            <legend>Page Banner</legend>
+            <div class="field"><label>Eyebrow</label><input name="about.eyebrow"></div>
+            <div class="field"><label>Heading</label><input name="about.heading"></div>
+            <div class="field"><label>Intro paragraph</label><textarea name="about.intro" rows="3"></textarea></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Story &amp; Approach</legend>
+            <div class="upload-mount" data-name="about.photo" data-label="Photo"></div>
+            <div class="field"><label>"Our Story" section heading</label><input name="about.storyHeading"></div>
+            <div class="field"><label>"Our Story" text</label><textarea name="about.story" rows="4"></textarea></div>
+            <div class="field"><label>"How We Work" section heading</label><input name="about.missionHeading"></div>
+            <div class="field"><label>"How We Work" text</label><textarea name="about.mission" rows="4"></textarea></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Site Values <span class="hint">(shown as cards &mdash; 3 reads best)</span></legend>
+            <div id="values-list" class="repeatable-list"></div>
+            <button type="button" class="btn-add" data-add="values">+ Add Value</button>
+          </fieldset>
+
+          <button type="submit" class="btn-primary btn-wide">Save About Page</button>
+          <p class="form-status" id="about-status"></p>
+        </form>
+      </section>
+
+      <!-- REVIEWS TAB -->
+      <section class="tab-panel" id="tab-reviews" data-tab="reviews" hidden>
+        <p class="tab-intro">
+          Google only ever returns up to 5 of its own reviews via API (Google's limit, not ours) &mdash;
+          add curated client reviews below to fill out the section. Both sources are merged and shown on the site.
+        </p>
+        <form id="review-form" class="inline-form">
+          <input type="text" id="review-author" placeholder="Client name" required maxlength="200">
+          <select id="review-rating">
+            <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; (5)</option>
+            <option value="4">&#9733;&#9733;&#9733;&#9733; (4)</option>
+            <option value="3">&#9733;&#9733;&#9733; (3)</option>
+          </select>
+          <input type="text" id="review-date" placeholder="e.g. June 2026" maxlength="50">
+          <textarea id="review-text" placeholder="What did the client say?" rows="2" required maxlength="2000"></textarea>
+          <button type="submit" class="btn-primary">Add Review</button>
+        </form>
+        <div id="reviews-admin-list" class="admin-list"></div>
+      </section>
+
+      <!-- LEADS TAB -->
+      <section class="tab-panel" id="tab-leads" data-tab="leads" hidden>
+        <p class="tab-intro">Submissions from the site's contact form.</p>
+        <div id="leads-list" class="admin-list"></div>
+      </section>
+
+      <!-- SETTINGS TAB -->
+      <section class="tab-panel" id="tab-settings" data-tab="settings" hidden>
+        <p class="tab-intro">Connect Google Reviews and manage your account.</p>
+
+        <form id="settings-form">
+          <fieldset>
+            <legend>Google Reviews Connection</legend>
+            <div class="field">
+              <label>Google Place ID</label>
+              <input type="text" id="settings-place-id" placeholder="ChIJ...">
+              <p class="field-help">Find this by searching your business at <a href="https://developers.google.com/maps/documentation/places/web-service/place-id" target="_blank" rel="noopener">Google's Place ID Finder</a>.</p>
+            </div>
+            <div class="field">
+              <label>Google Places API Key <span id="api-key-status" class="hint"></span></label>
+              <input type="password" id="settings-api-key" placeholder="Leave blank to keep the current key">
+              <p class="field-help">Create one in <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener">Google Cloud Console</a> with the "Places API (New)" enabled and restricted to server IP / referrer.</p>
+            </div>
+            <button type="submit" class="btn-primary">Save Connection</button>
+            <p class="form-status" id="settings-status"></p>
+          </fieldset>
+        </form>
+
+        <form id="password-form">
+          <fieldset>
+            <legend>Change Password</legend>
+            <div class="field"><label>Current password</label><input type="password" id="pw-current" required></div>
+            <div class="field"><label>New password (min 10 characters)</label><input type="password" id="pw-new" required minlength="10"></div>
+            <button type="submit" class="btn-primary">Update Password</button>
+            <p class="form-status" id="password-status"></p>
+          </fieldset>
+        </form>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script src="/admin/assets/js/admin-common.js"></script>
+<script src="/admin/assets/js/admin-dashboard.js"></script>
+</body>
+</html>

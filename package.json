@@ -1,0 +1,14 @@
+{
+  "name": "muthengi-bce-site",
+  "version": "1.0.0",
+  "description": "Muthengi Building & Construction Engineers — public site + admin dashboard. Pure Node.js (http module only), no frameworks, no runtime dependencies.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "UNLICENSED"
+}

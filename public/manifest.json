@@ -1,0 +1,11 @@
+{
+  "name": "Muthengi Building & Construction Engineers",
+  "short_name": "Muthengi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E1521",
+  "theme_color": "#0E1521",
+  "icons": [
+    { "src": "/assets/img/logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

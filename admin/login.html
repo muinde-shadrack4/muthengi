@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login &mdash; Muthengi BCE</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/assets/css/admin.css">
+</head>
+<body>
+
+<!-- FIRST-RUN SETUP -->
+<section id="view-setup" class="auth-view" hidden>
+  <form class="auth-card" id="setup-form">
+    <img src="/assets/img/logo.png" alt="Muthengi logo" class="auth-logo">
+    <h1>Create Admin Account</h1>
+    <p class="auth-sub">This runs once. Whoever sets this up first owns the dashboard.</p>
+    <label for="setup-username">Username</label>
+    <input type="text" id="setup-username" required minlength="3" maxlength="100" autocomplete="username">
+    <label for="setup-password">Password <span>(min 10 characters)</span></label>
+    <input type="password" id="setup-password" required minlength="10" autocomplete="new-password">
+    <button type="submit" class="btn-primary btn-wide">Create Account</button>
+    <p class="auth-status" id="setup-status"></p>
+  </form>
+</section>
+
+<!-- LOGIN -->
+<section id="view-login" class="auth-view" hidden>
+  <form class="auth-card" id="login-form">
+    <img src="/assets/img/logo.png" alt="Muthengi logo" class="auth-logo">
+    <h1>Admin Login</h1>
+    <p class="auth-sub">Muthengi Building &amp; Construction Engineers</p>
+    <label for="login-username">Username</label>
+    <input type="text" id="login-username" required autocomplete="username">
+    <label for="login-password">Password</label>
+    <input type="password" id="login-password" required autocomplete="current-password">
+    <button type="submit" class="btn-primary btn-wide">Log In</button>
+    <p class="auth-status" id="login-status"></p>
+  </form>
+</section>
+
+<script src="/admin/assets/js/admin-common.js"></script>
+<script src="/admin/assets/js/admin-auth.js"></script>
+</body>
+</html>
